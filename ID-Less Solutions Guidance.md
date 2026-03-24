@@ -100,70 +100,64 @@ THE STANDARDS, THE SPECIFICATIONS, THE MEASUREMENT GUIDELINES, AND ANY OTHER MAT
  
 ## Table of Contents 
 
-- About this document	2 
-- License	2 
-- Significant Contributors	2 
-- IAB Tech Lab Leads	3 
-- About IAB Tech Lab	3 
-- Disclaimer	3 
-- Glossary	5 
-- Table of Contents	8 
-- Introduction: Why ID-Less Solutions	10 
-- What are ID-Less Solutions?	12 
-- What is an ID?	12 
-- What are ID-Less Solutions?	14 
-- What are not ID-Less Solutions?	14 
-- Benefits and Challenges of ID-Less Approaches	16 
-- Benefits	16 
-- Challenges	18 
-- Overview of ID-Less Solutions	23 
-- Area: Attribution/Measurement	24 
-- Challenge: Campaign Reporting	24 
-- Promotional Codes	24 
-- A/B Testing	25 
-- Aggregated Attribution Reporting	25 
-- Probabilistic Cohorts	27 
-- Cross-Context Deterministic Cohorts	28 
-- Challenge: Multi-Touch Journey Mapping	29 
-- Propagated keywords	29 
-- Media Mix Modeling (MMM)	30 
-- Brand Lift Studies	30 
-- Challenge: Attention	31 
-- Rewarded Ads	31 
-- Attention Scores	32 
-- Area: Targeting & Prospecting	33 
-- Challenge: Audience Prospecting	33 
-- Contextual Data	33 
-- Probabilistic Cohorts	33 
-- Cross-Context Deterministic Cohorts	33 
-- Seller-Defined Audiences (SDA)	34 
-- Private Marketplace (PMP) Deals	35 
-- Private Aggregation, Reach Estimation	35 
-- Challenge: Audience Enrichment	37 
-- Cohort Lookalikes	37 
-- Area: Retargeting	38 
-- Challenge: Bring the Customer Back	38 
-- On-Device Auctions	38 
-- Area: Frequency & Recency Capping	40 
-- Challenge: Preventing Oversaturation	40 
-- On-Device Frequency Capping	40 
-- Challenge: Creative Sequencing	42 
-- Device-Side Creative Sequencing	42 
-- Challenge: Ad Pacing	42 
-- Device-Side Pacing	42 
-- Area: Fraud	43 
-- Challenge: Automated bot detection	43 
-- Device Attestation	43 
-- Private State Tokens	44 
-- Statistical Determination	45 
-- Challenge: Human bot detection	46 
-- Statistical Determination	46 
-- Examples of How ID-Based and ID-Less Technologies Differ	47 
-- Retargeting	47 
-- ID-Based Retargeting	47 
-- ID-Less Retargeting	49 
-- Frequency Capping	51 
-- Fraud Detection	55 
+- [Glossary](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#glossary)	
+- [Table of Contents](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#table-of-contents)	
+- [Introduction: Why ID-Less Solutions](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#introduction-why-id-less-solutions)	
+- [What are ID-Less Solutions?](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#what-are-id-less-solutions)	
+ - [What is an ID?	](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#what-is-an-id)
+ - [What are ID-Less Solutions?	](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#what-are-id-less-solutions-1)
+ - [What are not ID-Less Solutions?](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#what-are-not-id-less-solutions)	
+ - [Benefits and Challenges of ID-Less Approaches](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#benefits-and-challenges-of-id-less-approaches)	
+  - [Benefits](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#benefits)	
+  - [Challenges	](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#challenges) 
+- [Overview of ID-Less Solutions](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#overview-of-id-less-solutions)	
+ - [Area: Attribution/Measurement	](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#area-attributionmeasurement) 
+  - [Challenge: Campaign Reporting](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#challenge-campaign-reporting)	 
+   - [Promotional Codes](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#promotional-codes)	
+   - [A/B Testing	](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#ab-testing)
+   - [Aggregated Attribution Reporting](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#aggregated-attribution-reporting)	
+   - [Probabilistic Cohorts](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#probabilistic-cohorts)	 
+   - [Cross-Context Deterministic Cohorts](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#cross-context-deterministic-cohorts)	
+  - [Challenge: Multi-Touch Journey Mapping](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#challenge-multi-touch-journey-mapping)	
+   - [Propagated keywords](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#propagated-keywords)	
+   - [Media Mix Modeling (MMM)](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#media-mix-modeling-mmm)	
+   - [Brand Lift Studies](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#brand-lift-studies)	
+  - [Challenge: Attention](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#challenge-attention)	
+   - [Rewarded Ads](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#rewarded-ads)	
+   - [Attention Scores](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#attention-scores)	 
+ - [Area: Targeting & Prospecting](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#area-targeting--prospecting)	
+  - [Challenge: Audience Prospecting](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#challenge-audience-prospecting)	 
+   - [Contextual Data	](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#contextual-data)
+   - [Probabilistic Cohorts	](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#probabilistic-cohorts-1)
+   - [Cross-Context Deterministic Cohorts](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#cross-context-deterministic-cohorts-1)	
+   - [Seller-Defined Audiences (SDA)](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#seller-defined-audiences-sda)	
+   - [Private Marketplace (PMP) Deals](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#private-marketplace-pmp-deals)	 
+   - [Private Aggregation, Reach Estimation](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#private-aggregation-reach-estimation)	
+  - [Challenge: Audience Enrichment](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#challenge-audience-enrichment)	
+   - [Cohort Lookalikes](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#cohort-lookalikes)	
+ - [Area: Retargeting](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#area-retargeting)	
+  - [Challenge: Bring the Customer Back](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#challenge-bring-the-customer-back)	
+   - [On-Device Auctions](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#on-device-auctions)	
+ - [Area: Frequency & Recency Capping](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#area-frequency--recency-capping)	
+  - [Challenge: Preventing Oversaturation](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#challenge-preventing-oversaturation)	
+   - [On-Device Frequency Capping](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#on-device-frequency-capping)	 
+  - [Challenge: Creative Sequencing](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#challenge-creative-sequencing)	
+   - [Device-Side Creative Sequencing](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#device-side-creative-sequencing)	
+  - [Challenge: Ad Pacing](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#challenge-ad-pacing)	
+   - [Device-Side Pacing](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#device-side-pacing) 
+ - [Area: Fraud	](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#area-fraud)
+  - [Challenge: Automated bot detection](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#challenge-automated-bot-detection)	
+   - [Device Attestation](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#device-attestation)	
+   - [Private State Tokens](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#private-state-tokens)	 
+   - [Statistical Determination](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#statistical-determination)	
+  - [Challenge: Human bot detection](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#challenge-human-bot-detection)	
+   - [Statistical Determination](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#statistical-determination-1)	
+- [Examples of How ID-Based and ID-Less Technologies Differ	](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#examples-of-how-id-based-and-id-less-technologies-differ)
+ - [Retargeting](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#retargeting)	
+  - [ID-Based Retargeting](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#id-based-retargeting)	
+  - [ID-Less Retargeting](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#id-less-retargeting)	 
+ - [Frequency Capping](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#frequency-capping) 
+ - [Fraud Detection](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#fraud-detection)	 
 
 ## Introduction: Why ID-Less Solutions 
 
@@ -204,7 +198,7 @@ An example of a Key might be a cohort which identifies a (suitably large) group 
  
 ### What are ID-Less Solutions? 
 
-ID-Less solutions are methods for targeting ads and measuring advertising campaign performance without revealing information that could allow someone to learn who an ad was delivered to. They take a variety of approaches from using contextual information related to the ad placement to determining general audience attributes like those provided by Seller-Defined Audiences . 
+ID-Less solutions are methods for targeting ads and measuring advertising campaign performance without revealing information that could allow someone to learn who an ad was delivered to. They take a variety of approaches from using contextual information related to the ad placement to determining general audience attributes like those provided by [Seller-Defined Audiences](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#seller-defined-audiences-sda) . 
 
 ID-Less solutions will typically: 
 
@@ -261,6 +255,7 @@ Some benefits of ID-Less solutions are described in Table 1 below.
 On the other hand, ID-Less approaches also have a number of challenges (Table 2). 
 
 |Challenges |	Challenged |	Details |
+|---|---|---|
 |Some ID-Less technologies are still in their infancy. |	Publishers, Advertisers |	Some of the most promising new ID-Less technologies are still at an early stage of development and not widely adopted, so their performance on a number of dimensions, including scalability, measurability and transparency, among others, is still unknown. |
 |Use case coverage is incomplete. |	Advertisers |	Some use cases do not yet have known ID-Less solutions, or have unresolved limitations preventing their use. See Table 3 for examples. |
 |For use cases which are supported, ID-Less may not be as effective as ID-Based solutions. |	Advertisers| | 	 
@@ -340,7 +335,7 @@ Distributing discount codes in an ad creative to attribute a sale to a particula
 **Cons:**
 
 - Advertisers have a financial disincentive - running promotions increases cost of acquisition 
-- Only works when a purchase or conversion event is observed (unless used in combination with Propagated Keywords) 
+- Only works when a purchase or conversion event is observed (unless used in combination with [Propagated Keywords](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#propagated-keywords)) 
 - Scale of users redeeming promotional codes may be too small for effective attribution 
 
 **Improvements:**
@@ -574,7 +569,7 @@ Advertising by considering the likely audience for the content rather than user 
 
 - Proven model that works for awareness campaigns - has been used in radio and traditional media for a long time 
 - On the rise due to increasing investment in CTV content 
-- Content consumption may be tracked over time to form Probabilistic Cohorts 
+- Content consumption may be tracked over time to form [Probabilistic Cohorts](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#probabilistic-cohorts) 
 
 **Cons:**
 
@@ -584,13 +579,13 @@ Advertising by considering the likely audience for the content rather than user 
 
 Adoption: Early Adopters 
 
-See the section on Probabilistic Cohorts above. 
+See the section on [Probabilistic Cohorts](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#probabilistic-cohorts) above. 
 
 #### Cross-Context Deterministic Cohorts 
 
 Adoption: Early Adopters 
 
-See the section on Cross-Context Deterministic Cohorts above. 
+See the section on [Cross-Context Deterministic Cohorts](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#cross-context-deterministic-cohorts) above. 
 
 #### Seller-Defined Audiences (SDA) 
 
@@ -698,7 +693,7 @@ Where users belong to more than one cohort, correlations can be mapped to build 
 
 `"As an advertiser, I want to bring a potential customer back to the point-of-sale to convert (which may be a sign-up, a purchase, or some other call-to-action) because on average it takes 7 impressions to "break through the noise" ."` 
 
-Related to multi-touch attribution, audience prospecting. 
+Related to [multi-touch attribution](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#challenge-multi-touch-journey-mapping), [audience prospecting](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#challenge-audience-prospecting). 
 
 #### On-Device Auctions 
 
@@ -735,7 +730,7 @@ This assignment process does not need the advertiser or publisher to use an ID. 
 
 There are subtle differences between retargeting in an ID-Based versus an ID-Less approach that are important to understand. 
 
-You can find a deep dive into these differences in the examples below. 
+You can find a [deep dive into these differences](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#retargeting) in the examples below.
  
 ## Area: Frequency & Recency Capping 
 
@@ -769,7 +764,7 @@ When a device receives an ad creative with a frequency cap, it keeps a count of 
  
 **💡 Example: Frequency Capping in ID-Based and ID-Less Approaches** 
 
-The frequency capping example below builds on the prior retargeting example and explains how a shared storage system can be used in the browser to undertake frequency capping in an ID-Less approach. 
+The [frequency capping example](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#frequency-capping) below builds on the prior retargeting example and explains how a shared storage system can be used in the browser to undertake frequency capping in an ID-Less approach. 
 
 It also introduces the concept of a privacy budget and how that can cause an underreporting of impression totals. 
   
@@ -783,19 +778,19 @@ Similar to "ad break management" for TV content.
 
 Adoption: Innovators 
 
-Refer to On-Device Frequency Capping above. 
+Refer to [On-Device Frequency Capping](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#on-device-frequency-capping) above. 
  
 ### Challenge: Ad Pacing 
 
 `"As an advertiser, I want to ensure that my ad is neither displayed too frequently nor too sparsely over a given time period because it may reduce the effectiveness of my campaign's message."` 
 
-Related Use Case: Retargeting 
+Related Use Case: [Retargeting](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#retargeting) 
 
 #### Device-Side Pacing 
 
 Adoption: Innovators 
 
-Refer to On-Device Frequency Capping above. 
+Refer to [On-Device Frequency Capping](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#on-device-frequency-capping) above. 
  
 ## Area: Fraud 
 
@@ -857,7 +852,7 @@ A user visits a token issuer's website, and the issuer believes that they are a 
  
 Private State Tokens, one implementation of the Privacy Pass API, are a new mechanic designed specifically to help distinguish “real” viewers from bots. 
 
-You can find a detailed explanation of Private State Tokens in the examples below. 
+You can find a [detailed explanation of Private State Tokens](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#private-state-tokens) in the examples below. 
 
 **Note** 
 
@@ -889,7 +884,7 @@ While it may be possible to circumvent these measures on a small scale, in order
 
 Adoption: Innovators 
 
-See Statistical Determination above. 
+See [Statistical Determination](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#statistical-determination) above. 
  
 ## Examples of How ID-Based and ID-Less Technologies Differ 
 
