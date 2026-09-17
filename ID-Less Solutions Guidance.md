@@ -165,7 +165,7 @@ THE STANDARDS, THE SPECIFICATIONS, THE MEASUREMENT GUIDELINES, AND ANY OTHER MAT
 
 The advertising industry is undergoing a profound shift in how it identifies and reaches specific audiences with relevant messages. This shift is being driven by a change in market power between consumers and marketers. On one side, there are consumers and their advocates - regulators, browser platforms, device manufacturers, and other privacy-sensitive technology companies. On the other side are companies in the ad tech value chain - advertisers, publishers, DSPs, SSPs, third-party data providers and various intermediaries. Consumers, directly and through advocates, are increasingly asserting data rights through increased control of their personally identifiable information and the ability to identify them online. 
 
-A very conspicuous example of this shift is the deprecation of Third-party Cookies, first in Safari  and Firefox, and attempted in Chrome before being postponed in 2025 . Until recently, Third-party Cookies have been a major mechanism used by advertisers and publishers to uniquely identify devices across the open web. The ability to identify User-Agents allowed companies to deliver relevant ads in the right setting, at a pace and volume that optimized return on their marketing dollars. The IAB has estimated that the loss of cookie-based identifiers and similar privacy-driven modifications to the digital ad supply chain will drive up costs to maintain campaign ROAS/CAC/CPMs from 29% to as much as 200%  
+A very conspicuous example of this shift is the deprecation of Third-party Cookies, first in Safari[^1] and Firefox, and attempted in Chrome before being postponed in 2025[^2]. Until recently, Third-party Cookies have been a major mechanism used by advertisers and publishers to uniquely identify devices across the open web. The ability to identify User-Agents allowed companies to deliver relevant ads in the right setting, at a pace and volume that optimized return on their marketing dollars. The IAB has estimated that the loss of cookie-based identifiers and similar privacy-driven modifications to the digital ad supply chain will drive up costs to maintain campaign ROAS/CAC/CPMs from 29% to as much as 200%[^3]
 
 The critical ability to consistently identify, reach, and measure specific audience members in User-Agents where Third-party Cookies are not available has spurred intense innovation in technologies which will allow companies to reliably maintain relationships with consumers. These technologies, while not dependent on 3rd-party cookies, are not generally "ID-Less". Instead, they use deterministic data like email addresses, combined with probabilistic methods to create persistent identifiers. For more information about these solutions, please refer to our guidance on [ID Solutions](https://github.com/InteractiveAdvertisingBureau/ID-Solutions/blob/main/id-solutions-guidance.md). 
 
@@ -200,7 +200,7 @@ An example of a Key might be a cohort which identifies a (suitably large) group 
  
 ### What are ID-Less Solutions? 
 
-ID-Less solutions are methods for targeting ads and measuring advertising campaign performance without revealing information that could allow someone to learn who an ad was delivered to. They take a variety of approaches from using contextual information related to the ad placement to determining general audience attributes like those provided by [Seller-Defined Audiences](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#seller-defined-audiences-sda) . 
+ID-Less solutions are methods for targeting ads and measuring advertising campaign performance without revealing information that could allow someone to learn who an ad was delivered to. They take a variety of approaches from using contextual information related to the ad placement to determining general audience attributes like those provided by [Seller-Defined Audiences](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#seller-defined-audiences-sda)[^4]. 
 
 ID-Less solutions will typically: 
 
@@ -282,22 +282,22 @@ Table 3 shows how the benefits and challenges of ID-Less solutions recast themse
 |Audience Activation |	✔ |	✔ |
 |Bidstream Augmentation| 	✔ |	✔ |
 |Campaign Optimization| 	✔ |	✔ |
-|Retargeting| 	✔ |	✔  |
-|User-Agent Frequency Capping |	✔ |	✔  |
+|Retargeting| 	✔ |	✔[^5] |
+|User-Agent Frequency Capping |	✔ |	✔[^6] |
 |Global Frequency Capping |	✔ |	✖ |
 |Fraud |  |  |	 	 
 |Automated Bot Detection |	✔ |	✔ |
 |Human Bot Detection| 	✔ |	✔ |
 |Other Fraud Detection |	✔ |	✖ |
 |Reporting and Attribution|  |  | 	 	 
-|Aggregated Campaign Reporting | 	✔ |	✔ (Limited ) |
-|Event-Level Campaign Reporting| ✔ |	✔ (Delayed / imprecise )| 
+|Aggregated Campaign Reporting | 	✔ |	✔ (Limited[^7]) |
+|Event-Level Campaign Reporting| ✔ |	✔ (Delayed / imprecise[^8])| 
 |Aggregated Audience Insights & Trending| 	✔ |	✔ |
 |User-Level Insights & Journey Mapping| 	✔ |	✖ |
-|Attribution - Campaign |	✔ |	~  |
+|Attribution - Campaign |	✔ |	~[^9] |
 |Attribution - Conversions| 	✔ |	~ |
-|Attribution - App Installs |	✔ |	✔  |
-|Attribution - Multi-touch (MTA) |	✔ |	✔  |
+|Attribution - App Installs |	✔ |	✔[^10] |
+|Attribution - Multi-touch (MTA) |	✔ |	✔[^11] |
 
 *Table 3 - Comparison of Use Cases Between ID-Based and ID-Less Solutions*
 
@@ -367,7 +367,7 @@ In ID-Less contexts, user groupings may be determined by a variety of signals in
 
 Adoption: Early Majority 
 
-Browser and device manufacturers can provide aggregated reports with noise-induced data and limited reporting frequency to preserve individual user privacy while still providing some useful insights, such as AdAttributionKit , Attribution Reporting API , and Privacy-Preserving Attribution API14. 
+Browser and device manufacturers can provide aggregated reports with noise-induced data and limited reporting frequency to preserve individual user privacy while still providing some useful insights, such as AdAttributionKit[^12], Attribution Reporting API[^13], and Privacy-Preserving Attribution API[^14]. 
 
 Some implementations such as Interoperable Private Attribution (IPA) use Multi-Party Compute (MPC) to maintain anonymity. 
  
@@ -392,7 +392,7 @@ Some implementations such as Interoperable Private Attribution (IPA) use Multi-P
 
 **Improvements:**
 
-- As of November 2024, some API implementers cannot host their own TEE server and must rely on TEEs provided by the platform operator . 
+- As of November 2024, some API implementers cannot host their own TEE server and must rely on TEEs provided by the platform operator[^15]. 
  
 #### Probabilistic Cohorts  
 
@@ -429,7 +429,8 @@ By storing observed events (such as ad views, newsletter signups, and content vi
 
 - Allows for post-view campaign measurement
 - Encourages use of first-party data 
-- Deterministic - guarantees that all consented users will be present in the relevant cohort ● Operates similarly to Third-party Cookies, but with additional privacy guarantees
+- Deterministic - guarantees that all consented users will be present in the relevant cohort
+- Operates similarly to Third-party Cookies, but with additional privacy guarantees
 
 **Cons:**
 
@@ -693,7 +694,7 @@ Where users belong to more than one cohort, correlations can be mapped to build 
 
 ### Challenge: Bring the Customer Back 
 
-`"As an advertiser, I want to bring a potential customer back to the point-of-sale to convert (which may be a sign-up, a purchase, or some other call-to-action) because on average it takes 7 impressions to "break through the noise" ."` 
+`"As an advertiser, I want to bring a potential customer back to the point-of-sale to convert (which may be a sign-up, a purchase, or some other call-to-action) because on average it takes 7 impressions to "break through the noise"[^16]."` 
 
 Related to [multi-touch attribution](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#challenge-multi-touch-journey-mapping), [audience prospecting](https://github.com/InteractiveAdvertisingBureau/ID-Less-Solutions/blob/main/ID-Less%20Solutions%20Guidance.md#challenge-audience-prospecting). 
 
@@ -701,7 +702,7 @@ Related to [multi-touch attribution](https://github.com/InteractiveAdvertisingBu
 
 Adoption: Early Adopters 
 
-As users browse the web or use apps , they can be assigned to custom cohorts (known as interest groups) which reside on the user's device. Instead of these cohorts being sent to ad servers, the device itself runs a local auction and uses the bidding logic of the interest group to decide whether to bid or not. 
+As users browse the web or use apps[^17], they can be assigned to custom cohorts (known as interest groups) which reside on the user's device. Instead of these cohorts being sent to ad servers, the device itself runs a local auction and uses the bidding logic of the interest group to decide whether to bid or not. 
 
 This assignment process does not need the advertiser or publisher to use an ID. Examples of triggers for assigning a user to an interest group can include visiting a web page, adding an item to a wish list, or having seen a particular ad creative. 
 
@@ -900,7 +901,7 @@ This particular example explains the common behavior of some Chromium-based brow
 
 Figure 3 shows how retargeting differs between ID-Based and ID-Less approaches. In Figure 3a, an advertiser shares a well-defined group of individuals with a publisher site which serves them an ad. While the group is served in aggregate in a pseudonymous manner to meet privacy requirements, each individual in the group has a specific unique user ID (UUID). These UUIDs can be matched through some mechanic to corresponding UUIDs on other publisher sites. So when the User-Agent visits a second or third publisher’s site that has one of those matched UUIDs, that viewer can be retargeted through those publishers with a high degree of certainty.  
 
-However, the IDs used to create the matches do have a lifetime. In the case of Third-party Cookies, the average life of a desktop-based Third-party Cookie is approximately 30 days and for a mobile Third-party Cookie it is approximately 7 days . Retargeting campaigns can take anywhere from two weeks to two months depending on the industry/product being advertised. So without some other mechanic, the limited lifetime of an identifier limits the ability to retarget in a single campaign with a duration longer than that lifetime. Equally of interest, what if the advertiser wants to reach members of that group in a second campaign several months from now. How does that work? 
+However, the IDs used to create the matches do have a lifetime. In the case of Third-party Cookies, the average life of a desktop-based Third-party Cookie is approximately 30 days and for a mobile Third-party Cookie it is approximately 7 days[^18]. Retargeting campaigns can take anywhere from two weeks to two months depending on the industry/product being advertised. So without some other mechanic, the limited lifetime of an identifier limits the ability to retarget in a single campaign with a duration longer than that lifetime. Equally of interest, what if the advertiser wants to reach members of that group in a second campaign several months from now. How does that work? 
 
 
 *Figure 3 - Comparison of Retargeting with ID-Based and ID-Less Solutions* 
@@ -958,14 +959,14 @@ This process repeats itself across the entire programmatic ad ecosystem until th
 
 The advertiser or DSP can now report on an individualized basis for where and how many impressions were seen. This allows for predictive models to be built on an individual-by-individual basis to inform what ads, what creative, etc. to serve to that device in a future campaign. With a high-performing data pipeline and real-time modeling, the data can be used for real-time campaign optimization, media-mix modeling, or yield-optimization for this campaign.  
 
-Figure 4b shows one method for frequency capping in an ID-Less world using Chrome and Edge.  This approach uses a new standard, the Shared Storage API and something called “seeds”. The advertiser wishes to serve an ad up to a maximum of 3 impressions per device. When the first ad is served to a device, a seed is placed in the advertiser’s shared storage for that campaign. The seed contains a field for the impression cap, and a field for a counter. When the User-Agent goes to a second site, the publisher sends a "worklet" of Javascript code that accesses the seed from the advertiser’s shared storage.  When the ad is served, the counter is incremented by one. This process repeats itself until the frequency cap is reached.  After that, no further impressions are served for that advertiser for that campaign for that device. 
+Figure 4b shows one method for frequency capping in an ID-Less world using Chrome and Edge.[^19] This approach uses a new standard, the Shared Storage API and something called “seeds”. The advertiser wishes to serve an ad up to a maximum of 3 impressions per device. When the first ad is served to a device, a seed is placed in the advertiser’s shared storage for that campaign. The seed contains a field for the impression cap, and a field for a counter. When the User-Agent goes to a second site, the publisher sends a "worklet" of Javascript code that accesses the seed from the advertiser’s shared storage.[^20] When the ad is served, the counter is incremented by one. This process repeats itself until the frequency cap is reached.  After that, no further impressions are served for that advertiser for that campaign for that device. 
 
 While frequency capping has been achieved on an individual User-Agent basis, there are substantial differences between the two cases. 
 
 1.	The advertiser (or their DSP) cannot make adjustments to frequency capping in real time. 
 2.	The advertiser in the ID-Based case can manage the frequency cap globally across multiple User-Agents and channels. In the ID-Less case, the advertiser has no such control. All capping is local and any global result is an aggregation of the individual User-Agent results after the fact. 
-3.	Once again, reporting. Whether in a reporting worklet on the User-Agent, in a SDK on a mobile device, or in a Trusted Execution Environment, the data is aggregated across all User-Agents where that ad for that campaign is shown. There is no individualized data for the advertiser to model, only cohort level data.  That data can be both noised and time-delayed on any platform. The advertiser can know on average how many ads were served to any individual in the cohort, with a standard deviation showing the distribution. Modelling can only occur at the cohort level, and cannot be used in real-time audience targeting due to the time delay. When it comes to attribution, the average and standard deviation can be used to determine, on average, the ROAS for the campaign. But the advertiser cannot match an individual purchase to ads served to an individual. 
-4.	There is another subtlety that applies to reporting in both retargeting and frequency capping that has to do with privacy budgeting. Privacy budgeting is a concept from information theory. Information theory quantifies how much information is contained in some data set - in this case a single data export.  Releasing too much information through too many exports would allow a malicious actor to potentially reconstruct individual identities. So a privacy budget is put in place by browser and OS owners that limits how much data can be shared. When a User-Agent reaches its privacy budget, no data can be exported from that browser/device. Thus any aggregation of advertiser data for a specific campaign may not contain all the impressions served. There will thus be a bias towards under-reporting the frequency of ad serving. Moreover, the advertiser will only have a limited ability to understand just how “biased” the data may be. They can know something is not right if the average impressions served shown in the reports are lower than the frequency cap. Lacking that, only the standard deviation might provide some clues that something is incorrect.  
+3.	Once again, reporting. Whether in a reporting worklet on the User-Agent, in a SDK on a mobile device, or in a Trusted Execution Environment, the data is aggregated across all User-Agents where that ad for that campaign is shown. There is no individualized data for the advertiser to model, only cohort level data.[^21] That data can be both noised and time-delayed on any platform. The advertiser can know on average how many ads were served to any individual in the cohort, with a standard deviation showing the distribution. Modelling can only occur at the cohort level, and cannot be used in real-time audience targeting due to the time delay. When it comes to attribution, the average and standard deviation can be used to determine, on average, the ROAS for the campaign. But the advertiser cannot match an individual purchase to ads served to an individual. 
+4.	There is another subtlety that applies to reporting in both retargeting and frequency capping that has to do with privacy budgeting. Privacy budgeting is a concept from information theory. Information theory quantifies how much information is contained in some data set - in this case a single data export.[^22] Releasing too much information through too many exports would allow a malicious actor to potentially reconstruct individual identities. So a privacy budget is put in place by browser and OS owners that limits how much data can be shared. When a User-Agent reaches its privacy budget, no data can be exported from that browser/device. Thus any aggregation of advertiser data for a specific campaign may not contain all the impressions served. There will thus be a bias towards under-reporting the frequency of ad serving. Moreover, the advertiser will only have a limited ability to understand just how “biased” the data may be. They can know something is not right if the average impressions served shown in the reports are lower than the frequency cap. Lacking that, only the standard deviation might provide some clues that something is incorrect.  
  
 ### Fraud Detection 
 
@@ -985,7 +986,7 @@ There is a saying in adtech that perfect privacy opens the way for perfect fraud
 |Malvertising |	Deceptive ads that redirect users to malware-infected sites or install malware on their devices.| 
 |Mobile App Fraud |	Fraudulent activity targeting mobile apps, including click injection, click spamming, and install hijacking.| 
 
-Third-party Cookies and identifiers allow fraud detection algorithms to recognize a specific User-Agent as the first step in identifying suspected impression or click fraud.  These algorithms then look for patterns of behavior from the User-Agent that can help identify whether this is a “real” person to whom an ad should be served versus a bot or other malicious actor (e.g. manual click fraud) who should be blocked from receiving ads. Warning signals that ad fraud is occurring: 
+Third-party Cookies and identifiers allow fraud detection algorithms to recognize a specific User-Agent as the first step in identifying suspected impression or click fraud.[^23] These algorithms then look for patterns of behavior from the User-Agent that can help identify whether this is a “real” person to whom an ad should be served versus a bot or other malicious actor (e.g. manual click fraud) who should be blocked from receiving ads. Warning signals that ad fraud is occurring: 
 
 - An unusually high number of impressions served or clicks from the device in a short period of time or at unusual times (e.g., the middle of the night).
 - An unusually high number of impressions or clicks coming from a device in an unusual location, such as an obscure country. 
@@ -1005,3 +1006,26 @@ Tokens are issued by trusted third parties that provide the tokens to websites. 
 
 Private state tokens are actually a stronger method for detecting invalid traffic than systems based on Third-party Cookies. So this is one of the cases where ID-Less approaches can be superior to current, ID-Based approaches. 
  
+[^1]: https://webkit.org/tracking-prevention/
+[^2]: https://privacysandbox.com/news/privacy-sandbox-next-steps/
+[^3]: https://www.iab.com/insights/2024-state-of-data-report/
+[^4]: See IAB Tech Lab's Seller Defined Audiences Specification for a broader discussion of this type of ID-Less audience based on first-part data.
+[^5]: As retargeting in ID-Less contexts typically uses local storage, this generally applies to a single User-Agent or device but not the user across all devices.
+[^6]: User-Agent frequency-capping can be achieved by the user's device to limit an ad being shown more than a set number of times within the context of a browser, website, app, or device.
+[^7]: Campaign reporting is often limited in ID-Less contexts to the ad provider's own ecosystem, such as Apple's AdAttributionKit.
+[^8]: Event-Level campaign reporting is delayed and/or imprecise in ID-Less contexts for privacy.
+[^9]: Campaign and conversion attribution is under active investigation with cross-context deterministic cohorts.
+[^10]: App installs through AdAttributionKit and similar approaches.
+[^11]: For more information on how to implement MTA using Shared Storage see: https://privacysandbox.google.com/private-advertising/private-aggregation/multi-touch-attribution
+[^12]: https://developer.apple.com/documentation/adattributionkit
+[^13]: https://privacysandbox.google.com/private-advertising/attribution-reporting
+[^14]: https://w3c.github.io/ppa/#attribution
+[^15]: https://privacysandbox.google.com/private-advertising/aggregation-service/setup
+[^16]: For a basic discussion of "the rule of seven" see The rule of 7: The power of social media.
+[^17]: As of November 2024, the Protected Audience API is not yet available in mobile apps.
+[^18]: For desktop-based cookie lifetimes, see as one example "What is the Real Lifetime of Online Analytics Visitor Cookie?" by Varpu Rantala (Medium, June 2022). For mobile cookies, see "Safari ITP update limits cookies to 7 days for responses from 3rd party IPs." (Stape.io, September, 2024).
+[^19]: Android uses a slightly different mechanic, called Ad Filtering. The underlying concepts are the same but the implementations reflect the different nature of storage on desktop versus mobile devices.
+[^20]: The advertiser provides the publisher the key needed to access the advertiser's shared storage.
+[^21]: As in retargeting, publishers do receive event-level data for optimizing their ad placements, but we ignore that aspect for now.
+[^22]: For a good introduction to information theory see Stone, James V. Information Theory: A Tutorial Introduction. (Sebtel Press, 2015)
+[^23]: IP addresses can also be used. However, while IP addresses will no doubt be phased out as PII over time, right now they are still available so we will exclude them from this discussion.
