@@ -22,8 +22,9 @@ Chris Watts, NumberEight; Arthur Coleman, ThinkMedium; Brian May, Individual; Al
  
 ### IAB Tech Lab Leads 
 
-Rowena Lam, Sr. Director Privacy & Data 
-Shailley Singh, EVP Product & COO, IAB Tech Lab 
+Rowena Lam, Sr. Director Privacy & Data
+
+Shailley Singh, EVP Product & COO, IAB Tech Lab
  
 ### About IAB Tech Lab 
 
